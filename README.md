@@ -1,5 +1,5 @@
 # TowerDefense_Tilipuzik
 
 ## Koval
-## Kyril
+## Kirill
 ## Oleg
