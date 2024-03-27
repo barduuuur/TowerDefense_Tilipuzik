@@ -4,18 +4,23 @@ using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
-    public GameObject Core;
-    void Start()
-    {
-        
-    }
+    [SerializeField] private GameObject weapon;
+    private Transform target;
 
    
+    void Start()
+    {
+        target = FindObjectOfType<Transform>();
+    }
+
+    // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.A))
-        {
-           GameObject core =Instantiate(Core) as GameObject;
-        }
+        TargetAim();
     }
+    void TargetAim()
+    {
+        transform.LookAt(target);
+    }
+
 }
