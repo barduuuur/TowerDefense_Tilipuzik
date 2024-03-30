@@ -11,4 +11,8 @@ public class PlayToMenu : MonoBehaviour
        Application.Quit();
         
     }
+    public void LoadLevelIndex(int index)
+    {
+        SceneManager.LoadScene(index);
+    }
 }
