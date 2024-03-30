@@ -9,4 +9,9 @@ public class PlayToMenu : MonoBehaviour
     {
         SceneManager.LoadScene("SampleScene");
     }
+    public void Quit()
+    {
+       Application.Quit();
+        
+    }
 }
