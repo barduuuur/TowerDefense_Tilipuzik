@@ -6,6 +6,7 @@ TagManager:
   tags:
   - enemyBug
   - Enemy
+  - Sound
   layers:
   - Default
   - TransparentFX

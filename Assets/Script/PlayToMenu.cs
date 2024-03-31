@@ -5,13 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class PlayToMenu : MonoBehaviour
 {
-    public void LoadScene()
-    {
-        SceneManager.LoadScene("SampleScene");
-    }
+    
     public void Quit()
     {
        Application.Quit();
         
+    }
+    public void LoadLevelIndex(int index)
+    {
+        SceneManager.LoadScene(index);
     }
 }
