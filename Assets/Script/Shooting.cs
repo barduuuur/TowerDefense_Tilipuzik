@@ -7,28 +7,28 @@ using UnityEngine.Animations;
 public class Shooting : MonoBehaviour
 {
     [SerializeField] private Transform Gun;
+    [SerializeField] private Transform fireObject;
+    [SerializeField] private GameObject Core;
+    private Rigidbody rb;
+    private float Distans;
+    private float time_shoot = 0.05f;
     private GameObject target;
-    
 
-    void Start()
-    {
-        
-    }
 
-    
     void Update()
     {
-        if(target != null)
+        if (target != null)
         {
             TargetAim();
         }
     }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy")&& target==null)
         {
             target = other.gameObject;
-            
+            StartCoroutine(Shoot());
         }
     }
     private void OnTriggerExit(Collider other)
@@ -45,7 +45,7 @@ public class Shooting : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy") && target == null)
         {
             target = other.gameObject;
-            
+            StartCoroutine(Shoot());
         }
     }
             
@@ -53,4 +53,18 @@ public class Shooting : MonoBehaviour
     {
         Gun.LookAt(target.transform);
     }
+   IEnumerator Shoot()
+    {
+        while (Core != null)
+        {
+            GameObject PrefabBolled = Instantiate(Core, fireObject.position, Quaternion.identity);
+            fireObject.transform.LookAt(target.transform.position);
+
+            Rigidbody rb = PrefabBolled.GetComponent<Rigidbody>();
+            rb.AddForce(fireObject.forward * 11f, ForceMode.Impulse);
+            
+            yield return new WaitForSeconds(1f);
+        }
+    }
+
 }
