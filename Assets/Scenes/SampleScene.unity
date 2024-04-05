@@ -820,6 +820,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Gun: {fileID: 1247526946}
+  fireObject: {fileID: 0}
+  Core: {fileID: 0}
 --- !u!1001 &2034688725
 PrefabInstance:
   m_ObjectHideFlags: 0
