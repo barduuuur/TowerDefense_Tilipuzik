@@ -17,15 +17,8 @@ public class VolumeController : MonoBehaviour
     public void ChangeVolume()
     {
         volumeSource.volume = volumeSlider.value;
+        PlayerPrefs.SetFloat("Save1", volumeSource.volume);
     }
     
-    public void SaveVolume()
-    {
-        PlayerPrefs.SetFloat("Save1", volumeSource.volume);
-        
-        if (PlayerPrefs.HasKey("Save1"))
-        {
-            PlayerPrefs.GetFloat("Save1");
-        }
-    }
+    
 }
