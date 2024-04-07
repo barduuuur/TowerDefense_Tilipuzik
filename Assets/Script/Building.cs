@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class Building : MonoBehaviour
 {
+    public Renderer MainRenderer;
     public Vector2Int Size = Vector2Int.one;
+
+    public void SetTransparent(bool available)
+    {
+
+    }
 
     private void OnDrawGizmosSlected()
     {

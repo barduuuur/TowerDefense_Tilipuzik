@@ -36,7 +36,20 @@ public class BuildingGrid : MonoBehaviour
             {
                 Vector3 worldPosition = ray.GetPoint(position);
 
-                flyingBuilding.transform.position = worldPosition;
+                int x = Mathf.RoundToInt(worldPosition.x);
+                int y = Mathf.RoundToInt(worldPosition.z);
+
+                bool available = true;
+
+                if (x < 0 || x > GridSize.x - flyingBuilding.Size.x) available = false;
+                if (y < 0 || y > GridSize.y - flyingBuilding.Size.y) available = false;
+
+                flyingBuilding.transform.position = new Vector3(x, 0, y);
+
+                if (available && Input.GetMouseButtonDown(0))
+                {
+                    flyingBuilding = null;
+                }
             }
         }
     }
