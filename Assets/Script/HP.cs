@@ -1,18 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HP : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private Slider slider;
+    [SerializeField] private Vector3 offset;
+
+    private void Update()
     {
-        
+        slider.transform.position = Camera.main.WorldToScreenPoint(transform.parent.position + offset);
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetHealthValue(int currentHealth, int maxHealth)
     {
-        
+        slider.gameObject.SetActive(currentHealth < maxHealth);
+        slider.value = currentHealth;
+        slider.maxValue = maxHealth;
     }
 }
