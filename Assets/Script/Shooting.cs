@@ -12,7 +12,7 @@ public class Shooting : MonoBehaviour
     private Rigidbody rb;
     private float Distans;
     private float time_shoot = 0.05f;
-    private GameObject target;
+   [SerializeField] private GameObject target;
 
 
     void Update()
