@@ -24,7 +24,7 @@ public class EnemyController : MonoBehaviour
         _speed = _enemyStats.Speed;
         _myHp = _enemyStats.HP;
         _damage = _enemyStats.Damage;
-        
+        agent.speed = _speed;
     }
 
     public void TakeDamage(int volue)
