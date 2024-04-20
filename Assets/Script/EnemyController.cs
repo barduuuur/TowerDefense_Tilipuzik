@@ -9,6 +9,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private EnemyStats _enemyStats;
 
     AudioManager audioManager;
+    private int _speed;
     private int _myHp;
     private int _damage;
     private NavMeshAgent agent;
@@ -20,6 +21,7 @@ public class EnemyController : MonoBehaviour
         targetsPoint = GameObject.Find("MainTower").transform;
         agent.SetDestination(targetsPoint.position);
 
+        _speed = _enemyStats.Speed;
         _myHp = _enemyStats.HP;
         _damage = _enemyStats.Damage;
         

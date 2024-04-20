@@ -1819,7 +1819,7 @@ GameObject:
   - component: {fileID: 470266}
   - component: {fileID: 9510850}
   - component: {fileID: 14325198}
-  - component: {fileID: 11460088}
+  - component: {fileID: 7374745366479810851}
   m_Layer: 0
   m_Name: Goblin_rouge_o
   m_TagString: Untagged
@@ -1892,7 +1892,7 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 2.3, z: 0}
---- !u!114 &11460088
+--- !u!114 &7374745366479810851
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1901,13 +1901,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 172560}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 107e70a78028fcf4abe107cab565e94c, type: 3}
+  m_Script: {fileID: 11500000, guid: b4f7acc0f177a374fa8ad205b51a083b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.7
-  runSpeed: 1.7
-  turnSpeed: 90
-  gravity: 20
+  targetsPoint: {fileID: 0}
+  _enemyStats: {fileID: 11400000, guid: bc2e8ecda26836a429b4eb35c07efa6c, type: 2}
 --- !u!1 &172858
 GameObject:
   m_ObjectHideFlags: 0

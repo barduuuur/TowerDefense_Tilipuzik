@@ -10,6 +10,7 @@ TagManager:
   - Bullets
   - Exit
   - MainTower
+  - Audio
   layers:
   - Default
   - TransparentFX

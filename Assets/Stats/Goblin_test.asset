@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f3c13de804a940d4498ecb2a38600cba, type: 3}
-  m_Name: Gobln
+  m_Name: Goblin_test
   m_EditorClassIdentifier: 
   HP: 20
   Damage: 1
