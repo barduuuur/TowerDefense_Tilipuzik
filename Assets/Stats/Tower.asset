@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3c13de804a940d4498ecb2a38600cba, type: 3}
   m_Name: Tower
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream:Assets/Stats/Tower.asset
   HP: 0
   Tower_HP: 0
   Damage: 10
+=======
+  HP: 50
+  Damage: 5
+>>>>>>> Stashed changes:Assets/Charscter/Tower.asset
   Speed: 0
