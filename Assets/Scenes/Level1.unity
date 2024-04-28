@@ -26,19 +26,19 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 343e075ddd25f3343974c5ef47b87a95, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
   m_DefaultReflectionMode: 0
-  m_DefaultReflectionResolution: 128
-  m_ReflectionBounces: 1
+  m_DefaultReflectionResolution: 512
+  m_ReflectionBounces: 2
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_Sun: {fileID: 80034243}
+  m_IndirectSpecularColor: {r: 0.37921813, g: 0.5416761, b: 0.69643366, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 15bcea51a5722bf40a1f2e94611499a6, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: f46e8a9813ebb954ba52d6c499b4d8ff, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -134,6 +134,18 @@ PrefabInstance:
     - target: {fileID: 1240887441953726, guid: 8a976dcd328a4664c85144f33b9c46b0, type: 3}
       propertyPath: m_Name
       value: Core (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240887441953726, guid: 8a976dcd328a4664c85144f33b9c46b0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 1420486808462880, guid: 8a976dcd328a4664c85144f33b9c46b0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 1924820374804798, guid: 8a976dcd328a4664c85144f33b9c46b0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 4058025199840786, guid: 8a976dcd328a4664c85144f33b9c46b0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -196,6 +208,18 @@ PrefabInstance:
     - target: {fileID: 1153673260404766, guid: 6ff5b40e1b370ce45aa41f0f2596643a, type: 3}
       propertyPath: m_Name
       value: DesertBrazzier_Red (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153673260404766, guid: 6ff5b40e1b370ce45aa41f0f2596643a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 1829042895174398, guid: 6ff5b40e1b370ce45aa41f0f2596643a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 1976628540939954, guid: 6ff5b40e1b370ce45aa41f0f2596643a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 4037910522395942, guid: 6ff5b40e1b370ce45aa41f0f2596643a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -315,13 +339,13 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 1.02e-43, y: 5.6e-44, z: 6.984e-42, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -334,13 +358,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 80034242}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.34746498, y: 0.024107695, z: 0.040825743, w: 0.93649364}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 40.453, y: 5.545, z: 7.037}
 --- !u!1 &127370032
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,6 +577,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Core
       objectReference: {fileID: 0}
+    - target: {fileID: 1240887441953726, guid: 8a976dcd328a4664c85144f33b9c46b0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 1420486808462880, guid: 8a976dcd328a4664c85144f33b9c46b0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 1924820374804798, guid: 8a976dcd328a4664c85144f33b9c46b0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
     - target: {fileID: 4058025199840786, guid: 8a976dcd328a4664c85144f33b9c46b0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 40.46
@@ -689,6 +725,10 @@ PrefabInstance:
     - target: {fileID: 1863560779392640, guid: 64ee9c9da5098a141940ff4801cc9550, type: 3}
       propertyPath: m_Name
       value: HM_Grass_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1863560779392640, guid: 64ee9c9da5098a141940ff4801cc9550, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 4792822069781494, guid: 64ee9c9da5098a141940ff4801cc9550, type: 3}
       propertyPath: m_LocalScale.x
@@ -867,6 +907,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fire
       objectReference: {fileID: 0}
+    - target: {fileID: 6036245028925108166, guid: 0dc45914d072c07408655ded1490cd62, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
     - target: {fileID: 6039783752874450666, guid: 0dc45914d072c07408655ded1490cd62, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.32460093
@@ -932,6 +976,14 @@ PrefabInstance:
     - target: {fileID: 1141854476560308, guid: 7e40bbc6be241754e8d7dbdecba49ee1, type: 3}
       propertyPath: m_Name
       value: DesertBoxLarge_Blue (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1141854476560308, guid: 7e40bbc6be241754e8d7dbdecba49ee1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 1288911198079780, guid: 7e40bbc6be241754e8d7dbdecba49ee1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 4796576978320406, guid: 7e40bbc6be241754e8d7dbdecba49ee1, type: 3}
       propertyPath: m_LocalScale.x
@@ -1006,6 +1058,10 @@ PrefabInstance:
     - target: {fileID: 1796306004849952, guid: e29465159befc474182ece16f3f3916f, type: 3}
       propertyPath: m_Name
       value: HM_House_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1796306004849952, guid: e29465159befc474182ece16f3f3916f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 4328445271373350, guid: e29465159befc474182ece16f3f3916f, type: 3}
       propertyPath: m_LocalScale.x
@@ -1244,6 +1300,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HM_House_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1796306004849952, guid: e29465159befc474182ece16f3f3916f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
     - target: {fileID: 4328445271373350, guid: e29465159befc474182ece16f3f3916f, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.5000001
@@ -1317,6 +1377,10 @@ PrefabInstance:
     - target: {fileID: 1863560779392640, guid: 64ee9c9da5098a141940ff4801cc9550, type: 3}
       propertyPath: m_Name
       value: HM_Grass_1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1863560779392640, guid: 64ee9c9da5098a141940ff4801cc9550, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 4792822069781494, guid: 64ee9c9da5098a141940ff4801cc9550, type: 3}
       propertyPath: m_LocalScale.x
@@ -1392,6 +1456,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertPear (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114081256727678, guid: 1824e02d3cc87434392e99cadad214c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
     - target: {fileID: 4066813889433890, guid: 1824e02d3cc87434392e99cadad214c8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 27.82
@@ -1454,6 +1522,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertPear (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114081256727678, guid: 1824e02d3cc87434392e99cadad214c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
     - target: {fileID: 4066813889433890, guid: 1824e02d3cc87434392e99cadad214c8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.65704
@@ -1515,6 +1587,10 @@ PrefabInstance:
     - target: {fileID: 1863560779392640, guid: 64ee9c9da5098a141940ff4801cc9550, type: 3}
       propertyPath: m_Name
       value: HM_Grass_1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1863560779392640, guid: 64ee9c9da5098a141940ff4801cc9550, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 4792822069781494, guid: 64ee9c9da5098a141940ff4801cc9550, type: 3}
       propertyPath: m_LocalScale.x
@@ -1590,6 +1666,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertLadderExtra
       objectReference: {fileID: 0}
+    - target: {fileID: 1444453113138144, guid: 9cce68c11449fec40b58760062c80066, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
     - target: {fileID: 4042578100454286, guid: 9cce68c11449fec40b58760062c80066, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.65
@@ -1651,6 +1731,10 @@ PrefabInstance:
     - target: {fileID: 1863560779392640, guid: 64ee9c9da5098a141940ff4801cc9550, type: 3}
       propertyPath: m_Name
       value: HM_Grass_1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1863560779392640, guid: 64ee9c9da5098a141940ff4801cc9550, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 4792822069781494, guid: 64ee9c9da5098a141940ff4801cc9550, type: 3}
       propertyPath: m_LocalScale.x
@@ -1722,9 +1806,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 731277480}
     m_Modifications:
+    - target: {fileID: 1097219393808052, guid: 594879f1ae3fc4343a634a47b4cb96ff, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
     - target: {fileID: 1534373551778582, guid: 594879f1ae3fc4343a634a47b4cb96ff, type: 3}
       propertyPath: m_Name
       value: DesertBrazzier_Blue (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1534373551778582, guid: 594879f1ae3fc4343a634a47b4cb96ff, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622873308875958, guid: 594879f1ae3fc4343a634a47b4cb96ff, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 4059360183760046, guid: 594879f1ae3fc4343a634a47b4cb96ff, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1766,6 +1862,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 867889864051412644, guid: 594879f1ae3fc4343a634a47b4cb96ff, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838676987784861464, guid: 594879f1ae3fc4343a634a47b4cb96ff, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842879369460894146, guid: 594879f1ae3fc4343a634a47b4cb96ff, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 7298092491423845594, guid: 594879f1ae3fc4343a634a47b4cb96ff, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1787,6 +1899,10 @@ PrefabInstance:
     - target: {fileID: 1796306004849952, guid: e29465159befc474182ece16f3f3916f, type: 3}
       propertyPath: m_Name
       value: HM_House_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1796306004849952, guid: e29465159befc474182ece16f3f3916f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 4328445271373350, guid: e29465159befc474182ece16f3f3916f, type: 3}
       propertyPath: m_LocalScale.x
@@ -1984,9 +2100,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 731277480}
     m_Modifications:
+    - target: {fileID: 1413066595354350, guid: 193348c3051462b45b30788cea17551f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544341984015996, guid: 193348c3051462b45b30788cea17551f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
     - target: {fileID: 1577768073483710, guid: 193348c3051462b45b30788cea17551f, type: 3}
       propertyPath: m_Name
       value: DesertChestComplete (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577768073483710, guid: 193348c3051462b45b30788cea17551f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 4234813111254052, guid: 193348c3051462b45b30788cea17551f, type: 3}
       propertyPath: m_LocalScale.x
@@ -2064,7 +2192,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 69
   m_IsActive: 1
 --- !u!4 &731277480
 Transform:
@@ -2128,6 +2256,10 @@ PrefabInstance:
     - target: {fileID: 1656695917056388, guid: a71b9d2a84ec9b74b9a3b28a0b490096, type: 3}
       propertyPath: m_Name
       value: Fir_4c
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656695917056388, guid: a71b9d2a84ec9b74b9a3b28a0b490096, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 4724605153268992, guid: a71b9d2a84ec9b74b9a3b28a0b490096, type: 3}
       propertyPath: m_LocalScale.x
@@ -2335,6 +2467,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Core (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1240887441953726, guid: 8a976dcd328a4664c85144f33b9c46b0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 1420486808462880, guid: 8a976dcd328a4664c85144f33b9c46b0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 1924820374804798, guid: 8a976dcd328a4664c85144f33b9c46b0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
     - target: {fileID: 4058025199840786, guid: 8a976dcd328a4664c85144f33b9c46b0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.46
@@ -2488,6 +2632,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertBoxSmall_Empty
       objectReference: {fileID: 0}
+    - target: {fileID: 1540444690070732, guid: 7741c983f1500314384ff91311ee2b35, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
     - target: {fileID: 4449751864443088, guid: 7741c983f1500314384ff91311ee2b35, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.69
@@ -2618,6 +2766,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HM_Grass_1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1863560779392640, guid: 64ee9c9da5098a141940ff4801cc9550, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
     - target: {fileID: 4792822069781494, guid: 64ee9c9da5098a141940ff4801cc9550, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.3391418
@@ -2692,6 +2844,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertPear
       objectReference: {fileID: 0}
+    - target: {fileID: 1114081256727678, guid: 1824e02d3cc87434392e99cadad214c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
     - target: {fileID: 4066813889433890, guid: 1824e02d3cc87434392e99cadad214c8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 28.968002
@@ -2754,6 +2910,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertCowSkull
       objectReference: {fileID: 0}
+    - target: {fileID: 1851599260321516, guid: 603180f4e14cad44f998ca8340095c80, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
     - target: {fileID: 4103606245620684, guid: 603180f4e14cad44f998ca8340095c80, type: 3}
       propertyPath: m_LocalPosition.x
       value: 48.763897
@@ -2812,9 +2972,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 731277480}
     m_Modifications:
+    - target: {fileID: 2333451135935374642, guid: 52c7d057cba585641bb68312c10d7791, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
     - target: {fileID: 4617036660772024948, guid: 52c7d057cba585641bb68312c10d7791, type: 3}
       propertyPath: m_Name
       value: Portal red
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617036660772024948, guid: 52c7d057cba585641bb68312c10d7791, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 4706116037937865665, guid: 52c7d057cba585641bb68312c10d7791, type: 3}
       propertyPath: m_LocalScale.x
@@ -2867,6 +3035,14 @@ PrefabInstance:
     - target: {fileID: 4706116037937865665, guid: 52c7d057cba585641bb68312c10d7791, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842134302800741127, guid: 52c7d057cba585641bb68312c10d7791, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 8618916606913282851, guid: 52c7d057cba585641bb68312c10d7791, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3074,6 +3250,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Desertjar01
       objectReference: {fileID: 0}
+    - target: {fileID: 1913606116510838, guid: 7837a0e440c9a534ab604175ed3de3a6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
     - target: {fileID: 4592565193377862, guid: 7837a0e440c9a534ab604175ed3de3a6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.590639
@@ -3136,6 +3316,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertCowSkull (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1851599260321516, guid: 603180f4e14cad44f998ca8340095c80, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
     - target: {fileID: 4103606245620684, guid: 603180f4e14cad44f998ca8340095c80, type: 3}
       propertyPath: m_LocalPosition.x
       value: 48.89
@@ -3194,9 +3378,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 731277480}
     m_Modifications:
+    - target: {fileID: 1097219393808052, guid: 594879f1ae3fc4343a634a47b4cb96ff, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
     - target: {fileID: 1534373551778582, guid: 594879f1ae3fc4343a634a47b4cb96ff, type: 3}
       propertyPath: m_Name
       value: DesertBrazzier_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1534373551778582, guid: 594879f1ae3fc4343a634a47b4cb96ff, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 1622873308875958, guid: 594879f1ae3fc4343a634a47b4cb96ff, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 4059360183760046, guid: 594879f1ae3fc4343a634a47b4cb96ff, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3238,6 +3434,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 867889864051412644, guid: 594879f1ae3fc4343a634a47b4cb96ff, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 6838676987784861464, guid: 594879f1ae3fc4343a634a47b4cb96ff, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842879369460894146, guid: 594879f1ae3fc4343a634a47b4cb96ff, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 7298092491423845594, guid: 594879f1ae3fc4343a634a47b4cb96ff, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3248,6 +3460,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4059360183760046, guid: 594879f1ae3fc4343a634a47b4cb96ff, type: 3}
   m_PrefabInstance: {fileID: 1292101175}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1309667129
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1309667131}
+  - component: {fileID: 1309667130}
+  m_Layer: 0
+  m_Name: Reflection Probe
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!215 &1309667130
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309667129}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 0
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 56.92372, y: 24.361464, z: 56.95301}
+  m_BoxOffset: {x: -4.886202, y: 4.739605, z: -1.4327621}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 1
+  m_HDR: 1
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
+--- !u!4 &1309667131
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309667129}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 28.348059, y: 2.441125, z: 24.90926}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1352273958
 GameObject:
   m_ObjectHideFlags: 0
@@ -3385,7 +3662,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 69
   m_IsActive: 1
 --- !u!154 &1359060590
 TerrainCollider:
@@ -3474,6 +3751,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertJar02
       objectReference: {fileID: 0}
+    - target: {fileID: 1067366188859084, guid: 8866756bb5c6102468465319bbd59d9b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
     - target: {fileID: 4290849129447582, guid: 8866756bb5c6102468465319bbd59d9b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.807234
@@ -3535,6 +3816,10 @@ PrefabInstance:
     - target: {fileID: 1656695917056388, guid: a71b9d2a84ec9b74b9a3b28a0b490096, type: 3}
       propertyPath: m_Name
       value: Fir_4c (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1656695917056388, guid: a71b9d2a84ec9b74b9a3b28a0b490096, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 4724605153268992, guid: a71b9d2a84ec9b74b9a3b28a0b490096, type: 3}
       propertyPath: m_LocalScale.x
@@ -3609,6 +3894,14 @@ PrefabInstance:
     - target: {fileID: 1141854476560308, guid: 7e40bbc6be241754e8d7dbdecba49ee1, type: 3}
       propertyPath: m_Name
       value: DesertBoxLarge_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1141854476560308, guid: 7e40bbc6be241754e8d7dbdecba49ee1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 1288911198079780, guid: 7e40bbc6be241754e8d7dbdecba49ee1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 4796576978320406, guid: 7e40bbc6be241754e8d7dbdecba49ee1, type: 3}
       propertyPath: m_LocalScale.x
@@ -3766,6 +4059,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertBrazzier_Red
       objectReference: {fileID: 0}
+    - target: {fileID: 1153673260404766, guid: 6ff5b40e1b370ce45aa41f0f2596643a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 1829042895174398, guid: 6ff5b40e1b370ce45aa41f0f2596643a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 1976628540939954, guid: 6ff5b40e1b370ce45aa41f0f2596643a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
     - target: {fileID: 4037910522395942, guid: 6ff5b40e1b370ce45aa41f0f2596643a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 31.38
@@ -3920,9 +4225,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 731277480}
     m_Modifications:
+    - target: {fileID: 1413066595354350, guid: 193348c3051462b45b30788cea17551f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544341984015996, guid: 193348c3051462b45b30788cea17551f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
     - target: {fileID: 1577768073483710, guid: 193348c3051462b45b30788cea17551f, type: 3}
       propertyPath: m_Name
       value: DesertChestComplete
+      objectReference: {fileID: 0}
+    - target: {fileID: 1577768073483710, guid: 193348c3051462b45b30788cea17551f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 4234813111254052, guid: 193348c3051462b45b30788cea17551f, type: 3}
       propertyPath: m_LocalScale.x
@@ -3998,6 +4315,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertPear (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1114081256727678, guid: 1824e02d3cc87434392e99cadad214c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
     - target: {fileID: 4066813889433890, guid: 1824e02d3cc87434392e99cadad214c8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.349257
@@ -4072,6 +4393,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fire (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6036245028925108166, guid: 0dc45914d072c07408655ded1490cd62, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
     - target: {fileID: 6039783752874450666, guid: 0dc45914d072c07408655ded1490cd62, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.32460093
@@ -4137,6 +4462,10 @@ PrefabInstance:
     - target: {fileID: 1863560779392640, guid: 64ee9c9da5098a141940ff4801cc9550, type: 3}
       propertyPath: m_Name
       value: HM_Grass_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1863560779392640, guid: 64ee9c9da5098a141940ff4801cc9550, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 4792822069781494, guid: 64ee9c9da5098a141940ff4801cc9550, type: 3}
       propertyPath: m_LocalScale.x
@@ -4419,6 +4748,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HM_House_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1796306004849952, guid: e29465159befc474182ece16f3f3916f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 69
+      objectReference: {fileID: 0}
     - target: {fileID: 4328445271373350, guid: e29465159befc474182ece16f3f3916f, type: 3}
       propertyPath: m_LocalScale.x
       value: 3
@@ -4491,3 +4824,4 @@ SceneRoots:
   - {fileID: 1359060592}
   - {fileID: 878798631}
   - {fileID: 1016325645}
+  - {fileID: 1309667131}
