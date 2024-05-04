@@ -4,18 +4,26 @@ using UnityEngine;
 
 public class MainTower : MonoBehaviour
 {
-    [SerializeField] private EnemyStats _enemyStats;
-    private int _towerHp;
+    
+    public int _myHp;
     void Start()
     {
-        _towerHp = _enemyStats.Tower_HP;
+        
     }
     public void TowerTakeDamage(int volue)
     {
-        _towerHp -= volue;
-        if (_towerHp < 0)
+        _myHp -= volue;
+        if (_myHp < 0)
         {
             Destroy(gameObject);
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.TryGetComponent<EnemyController>(out EnemyController controller))
+        {
+            TowerTakeDamage(controller._damage);
+            Destroy(other.gameObject);
         }
     }
 }  

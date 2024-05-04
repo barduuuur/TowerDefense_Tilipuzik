@@ -5,7 +5,6 @@ using UnityEngine;
 public class EnemyStats : ScriptableObject
 {
     public int HP;
-    public int Tower_HP;
     public int Damage;
     public int Speed;
 }

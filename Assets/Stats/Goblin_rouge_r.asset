@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: Goblin_rouge_r
   m_EditorClassIdentifier: 
   HP: 10
-  Tower_HP: 0
-  Damage: 0
-  Speed: 15
+  Damage: 30
+  Speed: 20

@@ -11,14 +11,14 @@ public class EnemyController : MonoBehaviour
     AudioManager audioManager;
     private int _speed;
     private int _myHp;
-    private int _damage;
+    public int _damage;
     private NavMeshAgent agent;
     
 
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        targetsPoint = GameObject.Find("MainTower").transform;
+        targetsPoint =  GameObject.FindWithTag("MainTower").transform;
         agent.SetDestination(targetsPoint.position);
 
         _speed = _enemyStats.Speed;

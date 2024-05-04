@@ -589,8 +589,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4f7acc0f177a374fa8ad205b51a083b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetsPoint:
-  - {fileID: 0}
+  targetsPoint: {fileID: 0}
+  _enemyStats: {fileID: 11400000, guid: acd1dadb96688164a8550d3049436cb6, type: 2}
 --- !u!1 &1300070071406548
 GameObject:
   m_ObjectHideFlags: 0
@@ -828,7 +828,6 @@ GameObject:
   - component: {fileID: 23034285152922374}
   - component: {fileID: 135245969397926008}
   - component: {fileID: 54286000085106508}
-  - component: {fileID: 114734922601410596}
   m_Layer: 0
   m_Name: Enemy_Bug
   m_TagString: enemyBug
@@ -949,19 +948,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &114734922601410596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1548466523428658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b6d63bc97dbdbd4cbb197d5c4dacdfd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EnemyHP: 15
 --- !u!1 &1562084649372146
 GameObject:
   m_ObjectHideFlags: 0
