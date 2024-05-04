@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Building1 : MonoBehaviour
 {
-    public bool IsPlacement;
+    private bool IsPlacement;
 
     private void Start()
     {
