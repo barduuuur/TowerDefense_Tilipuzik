@@ -21,7 +21,7 @@ public class BuilderController : MonoBehaviour
    
     void Update()
     {
-        Ray ray = Camera.ScreenPointToRay(Input.mousePosition);
+        Ray ray = _camera.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
             if (Input.GetButtonDown("Fire1") && _builder)
