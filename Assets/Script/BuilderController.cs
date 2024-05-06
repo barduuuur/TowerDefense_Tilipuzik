@@ -11,6 +11,8 @@ public class BuilderController : MonoBehaviour
     private Building1 building;
     private bool _builder;
 
+    public static int score =0;
+
     void Start()
     {
         _camera = Camera.main;
@@ -38,8 +40,12 @@ public class BuilderController : MonoBehaviour
     }
     public void BuilderTower(int index)
     {
-        _index = index;
-        _builder = true;
+        if (score >= 100)
+        {
+            _index = index;
+            _builder = true;
+            score -= 100;
+        }
     }
 
 }
