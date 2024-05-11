@@ -11,6 +11,7 @@ public class EnemyController : MonoBehaviour
     AudioManager audioManager;
     private int _speed;
     private int _myHp;
+    private int _myPrise;
     public int _damage;
     private NavMeshAgent agent;
     
@@ -23,6 +24,7 @@ public class EnemyController : MonoBehaviour
 
         _speed = _enemyStats.Speed;
         _myHp = _enemyStats.HP;
+        _myHp = _enemyStats.myPrise;
         _damage = _enemyStats.Damage;
         agent.speed = _speed;
     }
@@ -32,9 +34,14 @@ public class EnemyController : MonoBehaviour
         _myHp -= volue;
         if (_myHp < 0)
         {
+           // EventManager.OnAddGold?.Inwoke(_myPrise);
             EventManager.onMusic?.Invoke();
             Destroy(gameObject);
         }
+    }
+    private void OnDestroy()
+    {
+        BuilderController.score += _myPrise;
     }
 
     private void OnTriggerEnter(Collider other)

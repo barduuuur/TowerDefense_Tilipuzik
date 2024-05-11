@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Goblin_test
   m_EditorClassIdentifier: 
   HP: 60
-  Damage: 60
+  myPrise: 0
+  Damage: 100
   Speed: 1
