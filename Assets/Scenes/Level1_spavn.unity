@@ -582,6 +582,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1863560779392640, guid: 64ee9c9da5098a141940ff4801cc9550, type: 3}
   m_PrefabInstance: {fileID: 583283346}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &139190299 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6747447626400557011, guid: 1def94e08a6c68e44b76f6309767fe5b, type: 3}
+  m_PrefabInstance: {fileID: 3613734000421292810}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &163924841
 GameObject:
   m_ObjectHideFlags: 0
@@ -665,6 +676,52 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 163924841}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &167925535
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 167925537}
+  - component: {fileID: 167925536}
+  m_Layer: 0
+  m_Name: GoldController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &167925536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167925535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1346a90f3af1a49ad9cd193d11c99d90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _text: {fileID: 139190299}
+  _myGold: 0
+--- !u!4 &167925537
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167925535}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.6912956, y: 2.2800002, z: 5.048544}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &167962461
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5835,7 +5892,7 @@ GameObject:
   - component: {fileID: 1676305789}
   m_Layer: 0
   m_Name: MainCamera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5927,9 +5984,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prefabs:
-  - {fileID: 129420, guid: d3ef549050e9b0542b4f3c3dd47a1085, type: 3}
-  - {fileID: 1674050128692650, guid: 997eda0f844715845a30121b4553e2fd, type: 3}
-  - {fileID: 187918, guid: 77a599bd67f72e24999e1d5d60f433d0, type: 3}
+  - {fileID: 7289493194521663002, guid: 75d0e13b74f08a449a368c457fa5b951, type: 3}
+  - {fileID: 4980987813420410113, guid: bb1cd956695be0d42a8b6eac5e38ccf9, type: 3}
+  - {fileID: 2376128264862734592, guid: 60e1235239c29d44c9805cc012ce8f4b, type: 3}
+  _towerPrice: f4010000e8030000dc050000
 --- !u!1 &1696602365
 GameObject:
   m_ObjectHideFlags: 0
@@ -6018,8 +6076,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1701485435}
-  - component: {fileID: 1701485434}
-  - component: {fileID: 1701485433}
   m_Layer: 5
   m_Name: PanelForSetting
   m_TagString: Untagged
@@ -6027,44 +6083,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1701485433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1701485432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1701485434
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1701485432}
-  m_CullTransparentMesh: 1
 --- !u!224 &1701485435
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6757,7 +6775,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1904360232}
-  - component: {fileID: 1904360231}
   m_Layer: 0
   m_Name: Bilding_tower
   m_TagString: Untagged
@@ -6765,18 +6782,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1904360231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1904360230}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef113bd272aff43009048d38f3a2d477, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1904360232
 Transform:
   m_ObjectHideFlags: 0
@@ -7131,11 +7136,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3171557223236331699, guid: 1def94e08a6c68e44b76f6309767fe5b, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4381085795333933446, guid: 1def94e08a6c68e44b76f6309767fe5b, type: 3}
       propertyPath: m_Name
       value: Coin
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5568763626473264165, guid: 1def94e08a6c68e44b76f6309767fe5b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -7155,3 +7165,4 @@ SceneRoots:
   - {fileID: 508404098}
   - {fileID: 712054343}
   - {fileID: 761754028}
+  - {fileID: 167925537}

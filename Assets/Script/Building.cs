@@ -1,26 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Building : MonoBehaviour
 {
-    public Renderer MainRenderer;
-    public Vector2Int Size = Vector2Int.one;
+    private bool IsPlacement;
 
-    public void SetTransparent(bool available)
+    private void Start()
     {
-
+        IsPlacement = true;
     }
 
-    private void OnDrawGizmosSlected()
+    public void BuildTower(GameObject place)
     {
-        for (int x = 0; x < Size.x; x++)
+        if(IsPlacement)
         {
-            for (int y = 0; y < Size.y; y++)
-            {
-                Gizmos.color = Color.gray;
-                Gizmos.DrawCube(transform.position + new Vector3(x, 0, y), new Vector3(1, 1f, 1));
-            }
+            Instantiate(place, transform.position, Quaternion.identity);
+            IsPlacement = false;
         }
     }
+   
 }

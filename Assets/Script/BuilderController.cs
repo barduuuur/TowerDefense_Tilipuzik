@@ -5,17 +5,22 @@ using UnityEngine;
 public class BuilderController : MonoBehaviour
 {
     [SerializeField] private GameObject[] _prefabs;
+    [SerializeField] private int[] _towerPrice;
+
     private int _index;
 
+    private GoldController _controller;
     private Camera _camera;
-    private Building1 building;
+    private Building building;
     private bool _builder;
 
-    public static int score =0;
+    private int currentScore;
 
     void Start()
     {
         _camera = Camera.main;
+        _controller = GameObject.FindAnyObjectByType<GoldController>();
+
         _index = 0;
         _builder = false;
     }
@@ -30,7 +35,7 @@ public class BuilderController : MonoBehaviour
         {
             if(Physics.Raycast(ray,out hit))
             {
-                if(hit.collider.TryGetComponent<Building1>(out building))
+                if(hit.collider.TryGetComponent<Building>(out building))
                 {
                     building.BuildTower(_prefabs[_index]);
                     _builder = false;
@@ -40,11 +45,15 @@ public class BuilderController : MonoBehaviour
     }
     public void BuilderTower(int index)
     {
-        if (score >= 100)
+        currentScore = _controller._myGold;
+        _index = index;
+        int currentPrice = _towerPrice[_index];
+
+        if (currentScore >= currentPrice)
         {
-            _index = index;
+            
             _builder = true;
-            score -= 100;
+            _controller.SubGold(currentPrice);
         }
     }
 

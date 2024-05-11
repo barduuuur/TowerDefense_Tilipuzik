@@ -44,7 +44,8 @@ public class EnemyController : MonoBehaviour
     }
     private void OnDestroy()
     {
-        BuilderController.score += _myPrise;
+        GoldController goldController = FindAnyObjectByType<GoldController>();
+        goldController.AddGold(_myPrice);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -57,9 +58,5 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    private void OnDestroy()
-    {
-        GoldController goldController = FindAnyObjectByType<GoldController>();
-        goldController.AddGold(_myPrice);
-    }
+   
 }

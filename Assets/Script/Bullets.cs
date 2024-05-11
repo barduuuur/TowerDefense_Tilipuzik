@@ -6,8 +6,11 @@ public class Bullets : MonoBehaviour
 {
     [SerializeField] private int _damage;
 
-    
-   
+    private void Start()
+    {
+        Destroy(gameObject, 3f);
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Enemy"))
