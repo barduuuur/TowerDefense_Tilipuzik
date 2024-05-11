@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -565, y: -110}
+  m_AnchoredPosition: {x: -599, y: -110}
   m_SizeDelta: {x: 520, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8181419209537784656
@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 1015783121918388436}
   - component: {fileID: 687963893817298060}
   m_Layer: 5
-  m_Name: NextLevl
+  m_Name: Play
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -155,7 +155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 627, y: -108}
+  m_AnchoredPosition: {x: 3, y: -108}
   m_SizeDelta: {x: 530, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6994031516090339489
@@ -239,7 +239,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1015783121918388436}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PlayToMenu, Assembly-CSharp
+        m_MethodName: LoadLevelIndex
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4159200305131558367
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,7 +287,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 38, y: -110}
+  m_AnchoredPosition: {x: 611, y: -110}
   m_SizeDelta: {x: 520, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1928819949067553772
@@ -306,7 +318,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ed2a04fe456008e4ca566577bf4ba671, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cc6f7cfb238c9e38680645e4631c5de3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

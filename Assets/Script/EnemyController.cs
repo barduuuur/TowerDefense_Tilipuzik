@@ -9,6 +9,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private EnemyStats _enemyStats;
 
     AudioManager audioManager;
+    private int _myPrice;
     private int _speed;
     private int _myHp;
     private int _myPrise;
@@ -27,6 +28,8 @@ public class EnemyController : MonoBehaviour
         _myHp = _enemyStats.myPrise;
         _damage = _enemyStats.Damage;
         agent.speed = _speed;
+        _myPrice = _enemyStats.Price;
+
     }
 
     public void TakeDamage(int volue)
@@ -52,5 +55,11 @@ public class EnemyController : MonoBehaviour
             characterController.TowerTakeDamage(_damage);
             Destroy(gameObject);
         }
+    }
+
+    private void OnDestroy()
+    {
+        GoldController goldController = FindAnyObjectByType<GoldController>();
+        goldController.AddGold(_myPrice);
     }
 }
