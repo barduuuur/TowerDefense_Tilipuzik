@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3c13de804a940d4498ecb2a38600cba, type: 3}
   m_Name: Goblin_rouge_r
   m_EditorClassIdentifier: 
+  _price: 0
   HP: 10
+  myPrise: 100
   Damage: 30
-  Speed: 20
+  Speed: 10

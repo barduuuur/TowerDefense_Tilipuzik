@@ -64,7 +64,7 @@ public class Shooting : MonoBehaviour
             fireObject.transform.LookAt(target.transform.position);
             
             Rigidbody rb = PrefabBolled.GetComponent<Rigidbody>();
-            rb.AddForce(fireObject.forward * 15f, ForceMode.Impulse);
+            rb.AddForce(fireObject.forward * 25f, ForceMode.Impulse);
             
             yield return new WaitForSeconds(1f);
             
