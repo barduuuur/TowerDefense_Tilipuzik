@@ -6211,7 +6211,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -6229,6 +6229,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75d40e60ec4992142b4dd3032f74e005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _sliderHp: {fileID: 221678125}
+  _textHp: {fileID: 1048568888}
   _myHp: 10000
 --- !u!1001 &1714652580
 PrefabInstance:
