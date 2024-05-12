@@ -1,18 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MainTower : MonoBehaviour
 {
-    
-    public int _myHp;
+    [SerializeField] private Slider _sliderHp;
+    [SerializeField] private Text _textHp;
+
+    [SerializeField] private int _myHp;
     void Start()
     {
-        
+        _sliderHp.maxValue = _myHp;
+        _sliderHp.value = _myHp;
+        _textHp.text = _myHp.ToString();
+
     }
     public void TowerTakeDamage(int volue)
     {
         _myHp -= volue;
+
+        _sliderHp.value = _myHp;
+        _textHp.text = _myHp.ToString();
         if (_myHp < 0)
         {
             Destroy(gameObject);
@@ -23,7 +30,7 @@ public class MainTower : MonoBehaviour
         if(other.gameObject.TryGetComponent<EnemyController>(out EnemyController controller))
         {
             TowerTakeDamage(controller._damage);
-            Destroy(other.gameObject);
+            Destroy(controller.gameObject);
         }
     }
 }  
