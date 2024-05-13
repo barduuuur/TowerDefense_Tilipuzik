@@ -680,5 +680,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Gun: {fileID: 0}
   fireObject: {fileID: 1963766827864662175}
-  Core: {fileID: 1240887441953726, guid: fc5fb488c55ffa04499a72b974901b92, type: 3}
+  Core: {fileID: 1240887441953726, guid: a2403383f8fb1d3429ad7e3b1053e96f, type: 3}
   target: {fileID: 0}

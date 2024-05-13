@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7713898322259077725}
   - component: {fileID: 5093119283289743022}
   m_Layer: 0
-  m_Name: Core 1
+  m_Name: Core 2
   m_TagString: Bullets
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02fb35eec6e3dd0458c26d7963abae4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 20
+  _damage: 30
 --- !u!1 &1420486808462880
 GameObject:
   m_ObjectHideFlags: 0

@@ -68,7 +68,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Gun: {fileID: 4616324788632413081}
   fireObject: {fileID: 2738917418102570153}
-  Core: {fileID: 1240887441953726, guid: 8a976dcd328a4664c85144f33b9c46b0, type: 3}
+  Core: {fileID: 1240887441953726, guid: fc5fb488c55ffa04499a72b974901b92, type: 3}
   target: {fileID: 0}
 --- !u!1 &3304215923469614628
 GameObject:

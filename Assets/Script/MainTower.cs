@@ -5,8 +5,9 @@ public class MainTower : MonoBehaviour
 {
     [SerializeField] private Slider _sliderHp;
     [SerializeField] private Text _textHp;
-
     [SerializeField] private int _myHp;
+
+    
     void Start()
     {
         _sliderHp.maxValue = _myHp;
@@ -33,4 +34,6 @@ public class MainTower : MonoBehaviour
             Destroy(controller.gameObject);
         }
     }
+   
+
 }  
