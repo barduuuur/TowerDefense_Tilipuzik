@@ -37,7 +37,7 @@ public class EnemyController : MonoBehaviour
         _myHp -= volue;
         if (_myHp < 0)
         {
-           // EventManager.OnAddGold?.Inwoke(_myPrise);
+           
             EventManager.onMusic?.Invoke();
             Destroy(gameObject);
         }
