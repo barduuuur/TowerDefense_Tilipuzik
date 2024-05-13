@@ -15,7 +15,18 @@ public class PlayToMenu : MonoBehaviour
     {
         SceneManager.LoadScene(index);
     }
-   
+    public void Stoop()
+    {
+        Time.timeScale = 0f;
+        
+    }
+    public void play()
+    {
+        Time.timeScale = 1.0f;
+    }
+    
+
+
 
 
 }

@@ -11,17 +11,17 @@ public class EnemyController : MonoBehaviour
     AudioManager audioManager;
     private int _myPrice;
     private int _speed;
-    private int _myHp;
-    private int _myPrise;
+    [SerializeField] private int _myHp;
     public int _damage;
     private NavMeshAgent agent;
-    
+    private GoldController goldController;
 
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         targetsPoint =  GameObject.FindWithTag("MainTower").transform;
         agent.SetDestination(targetsPoint.position);
+        goldController = FindAnyObjectByType<GoldController>();
 
         _speed = _enemyStats.Speed;
         _myHp = _enemyStats.HP;
@@ -37,17 +37,12 @@ public class EnemyController : MonoBehaviour
         _myHp -= volue;
         if (_myHp < 0)
         {
-           
             EventManager.onMusic?.Invoke();
+            goldController.AddGold(_myPrice);
             Destroy(gameObject);
         }
     }
-    private void OnDestroy()
-    {
-        GoldController goldController = FindAnyObjectByType<GoldController>();
-        goldController.AddGold(_myPrice);
-    }
-
+  
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("MainTower"))
