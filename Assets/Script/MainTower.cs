@@ -1,12 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class MainTower : MonoBehaviour
 {
     [SerializeField] private Slider _sliderHp;
     [SerializeField] private Text _textHp;
     [SerializeField] private int _myHp;
-
+    
     
     void Start()
     {
@@ -23,7 +24,7 @@ public class MainTower : MonoBehaviour
         _textHp.text = _myHp.ToString();
         if (_myHp < 0)
         {
-            Destroy(gameObject);
+           
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -34,6 +35,6 @@ public class MainTower : MonoBehaviour
             Destroy(controller.gameObject);
         }
     }
-   
+    
 
 }  
