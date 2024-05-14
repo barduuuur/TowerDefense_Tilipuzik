@@ -8,10 +8,12 @@ public class SpavnEnemy : MonoBehaviour
     [SerializeField]public Transform spawn; 
     public float spawnRate = 2f; 
     private float nextSpawnTime = 0f;
+    public int MobsToSpawn = 10;
+    private int mobsSpawned = 0;
 
     void Update()
     {
-        if (Time.time >= nextSpawnTime)
+        if (mobsSpawned < MobsToSpawn && Time.time >= nextSpawnTime)
         {
             SpawnRandomPrefab(); 
             nextSpawnTime = Time.time + spawnRate; 
@@ -25,6 +27,7 @@ public class SpavnEnemy : MonoBehaviour
         int randomIndex = Random.Range(0, enemy.Length); 
         GameObject prefabToSpawn = enemy[randomIndex]; 
 
-        Instantiate(prefabToSpawn, spawn.position, spawn.rotation); 
+        Instantiate(prefabToSpawn, spawn.position, spawn.rotation);
+        mobsSpawned++;
     }
 }
