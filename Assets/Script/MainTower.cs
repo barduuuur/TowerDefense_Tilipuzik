@@ -7,8 +7,11 @@ public class MainTower : MonoBehaviour
     [SerializeField] private Slider _sliderHp;
     [SerializeField] private Text _textHp;
     [SerializeField] private int _myHp;
+    [SerializeField] private GameObject LosePanel;
     
-    
+
+
+
     void Start()
     {
         _sliderHp.maxValue = _myHp;
@@ -22,9 +25,10 @@ public class MainTower : MonoBehaviour
 
         _sliderHp.value = _myHp;
         _textHp.text = _myHp.ToString();
-        if (_myHp < 0)
+        if (_myHp <= 0)
         {
-           
+            _myHp = 0;
+            Lose();
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -35,6 +39,10 @@ public class MainTower : MonoBehaviour
             Destroy(controller.gameObject);
         }
     }
-    
 
+    public void Lose()
+    {
+        LosePanel.SetActive(true);
+        Time.timeScale = 0f;
+    }
 }  
