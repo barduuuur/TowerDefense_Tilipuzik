@@ -5,7 +5,8 @@ using UnityEngine;
 public class SpavnEnemy : MonoBehaviour
 {
     [SerializeField]public GameObject[] enemy; 
-    [SerializeField]public Transform spawn; 
+    [SerializeField]public Transform spawn;
+    [SerializeField] private GameObject WinPanel;
     public float spawnRate = 2f; 
     private float nextSpawnTime = 0f;
     public int MobsToSpawn = 10;
@@ -18,6 +19,11 @@ public class SpavnEnemy : MonoBehaviour
             SpawnRandomPrefab(); 
             nextSpawnTime = Time.time + spawnRate; 
         }
+        if(mobsSpawned == MobsToSpawn)
+        {
+            Win();
+            Time.timeScale = 0f;
+        }
     }
 
     void SpawnRandomPrefab()
@@ -29,5 +35,10 @@ public class SpavnEnemy : MonoBehaviour
 
         Instantiate(prefabToSpawn, spawn.position, spawn.rotation);
         mobsSpawned++;
+    }
+
+    public void Win()
+    {
+        WinPanel.SetActive(true);
     }
 }
