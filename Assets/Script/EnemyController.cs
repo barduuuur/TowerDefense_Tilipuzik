@@ -38,11 +38,16 @@ public class EnemyController : MonoBehaviour
         if (_myHp < 0)
         {
             EventManager.onMusic?.Invoke();
-            goldController.AddGold(_myPrice);
+            goldController.AddGold(_myPrice);           
             Destroy(gameObject);
         }
     }
-  
+
+    private void OnDestroy()
+    {
+         GameObject.FindAnyObjectByType<SpavnEnemy>().EnemyDie++;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("MainTower"))

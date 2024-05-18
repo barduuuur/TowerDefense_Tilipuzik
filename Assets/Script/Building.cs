@@ -13,7 +13,15 @@ public class Building : MonoBehaviour
     {
         if(IsPlacement)
         {
-            Instantiate(place, transform.position, Quaternion.identity);
+            Vector3 spawnPosition = new Vector3(
+                transform.position.x, 
+                transform.position.y + 0.5f,
+                transform.position.z
+                );
+
+
+
+            Instantiate(place, spawnPosition, Quaternion.identity);
             IsPlacement = false;
         }
     }
