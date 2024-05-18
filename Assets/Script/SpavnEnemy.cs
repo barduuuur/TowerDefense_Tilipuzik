@@ -24,7 +24,7 @@ public class SpavnEnemy : MonoBehaviour
         if(EnemyDie == MobsToSpawn)
         {
             Win();
-            Time.timeScale = 0f;
+           
         }
     }
 

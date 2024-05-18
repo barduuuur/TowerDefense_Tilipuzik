@@ -411,6 +411,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 28824303}
   m_CullTransparentMesh: 1
+--- !u!1 &41969134 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1862131246911683342, guid: 181e76a22ae7cce4b80b4babffaca848, type: 3}
+  m_PrefabInstance: {fileID: 363159460}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &47557119
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,7 +774,7 @@ MonoBehaviour:
   spawn: {fileID: 924063119}
   WinPanel: {fileID: 0}
   spawnRate: 2
-  MobsToSpawn: 25
+  MobsToSpawn: 20
   EnemyDie: 0
 --- !u!4 &99735918
 Transform:
@@ -5626,7 +5631,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 10000
+  m_Text: '1000
+
+'
 --- !u!222 &1124241482
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8074,8 +8081,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sliderHp: {fileID: 1832749084}
   _textHp: {fileID: 1124241481}
-  _myHp: 5000
-  LosePanel: {fileID: 0}
+  _myHp: 1000
+  LosePanel: {fileID: 41969134}
 --- !u!65 &1734286152
 BoxCollider:
   m_ObjectHideFlags: 0

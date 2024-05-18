@@ -989,7 +989,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17, y: 479.80463}
+  m_AnchoredPosition: {x: 17, y: 497}
   m_SizeDelta: {x: 1046.1953, y: 76.1576}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &221678125
@@ -4580,7 +4580,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 10000
+  m_Text: 500
 --- !u!222 &1048568889
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4626,8 +4626,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -17, y: -364.768}
-  m_SizeDelta: {x: -953.6385, y: -729.5361}
+  m_AnchoredPosition: {x: -17, y: -372}
+  m_SizeDelta: {x: -953.6385, y: -735.5881}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1053267804
 MonoBehaviour:
@@ -6615,7 +6615,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sliderHp: {fileID: 221678125}
   _textHp: {fileID: 1048568888}
-  _myHp: 1000
+  _myHp: 500
   LosePanel: {fileID: 278168658}
 --- !u!1001 &1714652580
 PrefabInstance:
