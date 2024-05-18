@@ -12,6 +12,8 @@ public class SpavnEnemy : MonoBehaviour
     public int MobsToSpawn = 10;
     private int mobsSpawned = 0;
 
+    public int EnemyDie = 0;
+
     void Update()
     {
         if (mobsSpawned < MobsToSpawn && Time.time >= nextSpawnTime)
@@ -19,7 +21,7 @@ public class SpavnEnemy : MonoBehaviour
             SpawnRandomPrefab(); 
             nextSpawnTime = Time.time + spawnRate; 
         }
-        if(mobsSpawned == MobsToSpawn)
+        if(EnemyDie == MobsToSpawn)
         {
             Win();
             Time.timeScale = 0f;
