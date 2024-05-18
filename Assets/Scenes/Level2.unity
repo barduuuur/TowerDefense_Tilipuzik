@@ -764,7 +764,7 @@ MonoBehaviour:
   - {fileID: 172560, guid: 00a11f3eb5ba2aa4a9fe95591be93e28, type: 3}
   - {fileID: 185802, guid: c1d92bdd55f8c154c957dcd4f7cfe669, type: 3}
   spawn: {fileID: 924063119}
-  WinPanel: {fileID: 0}
+  WinPanel: {fileID: 1014388419}
   spawnRate: 2
   MobsToSpawn: 25
   EnemyDie: 0
@@ -1087,7 +1087,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7818323799090180231, guid: 803ee579d9a9dcb418be5bb91f6ba8c4, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7818323799090180231, guid: 803ee579d9a9dcb418be5bb91f6ba8c4, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2129,6 +2129,11 @@ PrefabInstance:
 --- !u!224 &363159461 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 9167362040750254549, guid: 181e76a22ae7cce4b80b4babffaca848, type: 3}
+  m_PrefabInstance: {fileID: 363159460}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &363159462 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1862131246911683342, guid: 181e76a22ae7cce4b80b4babffaca848, type: 3}
   m_PrefabInstance: {fileID: 363159460}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &398927838
@@ -4373,6 +4378,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 582942641}
+        m_TargetAssemblyTypeName: PlayToMenu, Assembly-CSharp
+        m_MethodName: Stoop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &906849932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5158,6 +5175,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5cfd3266d043d1748bf7de10e51a1e33, type: 3}
+--- !u!1 &1014388419 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6587352326656588753, guid: 5cfd3266d043d1748bf7de10e51a1e33, type: 3}
+  m_PrefabInstance: {fileID: 1014388418}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1039050501
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7974,7 +7996,7 @@ MonoBehaviour:
   _sliderHp: {fileID: 1832749084}
   _textHp: {fileID: 1124241481}
   _myHp: 5000
-  LosePanel: {fileID: 0}
+  LosePanel: {fileID: 363159462}
 --- !u!1001 &1739365294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8229,6 +8251,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 582942641}
+        m_TargetAssemblyTypeName: PlayToMenu, Assembly-CSharp
+        m_MethodName: play
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10235,8 +10269,8 @@ SceneRoots:
   - {fileID: 449654286}
   - {fileID: 1339535025}
   - {fileID: 283257311}
-  - {fileID: 582942642}
   - {fileID: 99735918}
   - {fileID: 1828014944}
   - {fileID: 1835496204}
   - {fileID: 708517544}
+  - {fileID: 582942642}

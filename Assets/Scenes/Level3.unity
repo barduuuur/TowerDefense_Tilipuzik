@@ -6812,6 +6812,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 722666259}
+        m_TargetAssemblyTypeName: PlayToMenu, Assembly-CSharp
+        m_MethodName: play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1646068208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7100,6 +7112,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 722666259}
+        m_TargetAssemblyTypeName: PlayToMenu, Assembly-CSharp
+        m_MethodName: Stoop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1688535487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7341,7 +7365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7818323799090180231, guid: 803ee579d9a9dcb418be5bb91f6ba8c4, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7957119881311070380, guid: 803ee579d9a9dcb418be5bb91f6ba8c4, type: 3}
       propertyPath: m_AnchorMax.x

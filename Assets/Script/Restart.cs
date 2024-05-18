@@ -16,4 +16,8 @@ public class Restart : MonoBehaviour
     {
         SceneManager.LoadScene("Level3");
     }
+    public void RestartLevel4()
+    {
+        SceneManager.LoadScene("Level1_spavn");
+    }
 }
